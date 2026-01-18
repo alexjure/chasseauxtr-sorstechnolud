@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+  Project: Chasse aux trésors Technolud
+  Author: Alex Juré
+  Date: 2026-01-18
+  Description: Page de l’énigme finale
+-->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Enigme Finale</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>TECHNOLUD SYSTEM v02.26</h1>
+        <h2 class="textIntro">
+            Bravo à vous, vous avez trouver toutes les bonnes réponses<br />
+            Bienvenue sur l'énigme finale
+        </h2>
+    </div>
+
+    <div class="finalRiddle">
+        <div class="riddleText">
+            <p>On me demande parfois en ligne,<br />
+                Je suis fait de lettres, de chiffres et <br />parfois de caractères spéciaux <br />
+                Si je suis divulgué, tout deviens accessible<br />
+                Qui suis-je ?</p>
+        </div>
+
+        <form class="answerForm">
+            <p>Réponse<br><input type="text" name="QR Code 1" id="riddle1"></p>
+            <button type="submit">Valider</button>
+        </form>
+        <!--hidden-->
+        <div class="feedbackMessage hidden">
+            <h3>Félicitations</h3>
+            <p>Tu as été malin et persévérant, mais souviens-toi, sur internet, tous les QR Codes
+                et liens ne sont pas sûrs.
+            </p>
+
+            <p>Reste toujours vigilant, ne divulgue jamais tes informations personnelles, et réfléchis avant
+                de cliquer!
+            </p>
+
+            <p><i class="fa-solid fa-triangle-exclamation"></i> En cas de cyberharcèlement: <span>e-Enfance</span> ou
+                <span>3018</span> sont à ton écoute <i class="fa-solid fa-triangle-exclamation"></i></p>
+
+            <p class="smallText">Maintenant que tu as toutes les réponses, ne les transmet pas aux autres, cela serait
+                dommage de gâcher le plaisir du jeu.</p>
+        </div>
+
+        <div class="errorMessage">
+
+        </div>
+    </div>
+
+
+    <script type="module" src="script2.js"></script>
+</body>
+
+</html>

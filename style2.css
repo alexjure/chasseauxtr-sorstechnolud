@@ -1,0 +1,282 @@
+/*
+  Project: QR Code Treasure Hunt
+  Author: Alex Juré
+  Date: 2026-01-18
+  Description: Style pour la page de l’énigme finale
+*/
+
+body {
+    background-color: #020617;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "JetBrains Mono", Arial, Helvetica, sans-serif;
+}
+
+/*Partie titre*/
+
+.title {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+h1,
+h2 {
+    color: #22c55E;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/*Partie enigme */
+
+.finalRiddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.riddleText {
+    margin: 5px;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*form*/
+
+.formulaire {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form p {
+    text-align: center;
+    margin: 10px;
+    font-weight: 800;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    margin: 5px 0px;
+    padding: 14px 16px;
+    background-color: #020617;
+    color: #22c55E;
+    border: 1px solid #22C55e;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    color: #22C55e;
+    border: 1px solid #22C55e;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+/* Message */
+
+.feedbackMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.feedbackMessage h3 {
+    color: rgb(0, 225, 255);
+    font-size: 40px;
+}
+
+.feedbackMessage p {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.feedbackMessage span {
+    color: rgb(255, 251, 0);
+    font-weight: 600;
+}
+
+.feedbackMessage i {
+    color: rgb(255, 251, 0);
+}
+
+.feedbackMessage .smallText {
+    font-size: 20px;
+}
+
+.errorMessage p {
+    color: red;
+}
+
+/*Version tablette*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /*Partie titre*/
+    .title {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /*Partie quiz*/
+
+    .finalRiddle p {
+        font-size: 20px;
+    }
+
+    form p {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 150px;
+        height: 15px;
+        font-size: 20px;
+    }
+
+    button {
+        width: 150px;
+        height: 50px;
+        margin-top: 5px;
+        font-size: 25px;
+        font-size: 25px;
+    }
+
+    /*Message d'erreur*/
+
+    .finalRiddle {
+        width: 95%;
+    }
+
+    .feedbackMessage h3 {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .feedbackMessage p {
+        font-size: 22px;
+    }
+
+    .feedbackMessage .smallText {
+        font-weight: 17px;
+    }
+
+}
+
+
+/*Version mobile*/
+
+@media screen and (max-width:767px) {
+
+    .title {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    /*Partie enigme*/
+
+    .finalRiddle {
+        width: 95%;
+    }
+
+    .finalRiddle p {
+        font-size: 20px;
+    }
+
+    .riddleText {
+        width: 100%;
+        margin: 0;
+    }
+
+    /*Form*/
+
+    form {
+        width: 100%;
+    }
+
+    form p {
+        font-size: 20px;
+
+    }
+
+    input {
+        width: 90%;
+        height: 10px;
+        margin: 5px 0 0 0;
+        font-size: 22px;
+    }
+
+    button {
+        width: 50%;
+        height: 50px;
+        font-size: 25px;
+
+    }
+
+    /*feedbackMessage*/
+
+    .finalRiddle {
+        width: 95%;
+    }
+
+    .feedbackMessage h3 {
+        font-size: 30px;
+    }
+
+    .feedbackMessage p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .feedbackMessage .smallText {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  Project: Chasse aux trésors Technolud
+  Author: Alex Juré
+  Date: 2026-01-18
+  Description: Page d'accueil pour accéder à l'énigme finale
+-->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Chasse aux Trésors Technolud</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>TECHNOLUD SYSTEM v02.26</h1>
+        <h2 class="textIntro">
+            Félicitations, bienvenue à l'étape finale !
+            Entrer ci-dessous toutes vos réponses pour accéder à l'ultime énigme !
+        </h2>
+    </div>
+    <div class="formContainer">
+        <form class="quizForm">
+            <p>Qr code n°1:<br> <input type="text" name="QR Code 1" id="riddle1"></p>
+            <p>Qr code n°2:<br> <input type="text" name="QR Code 2" id="riddle2"></p>
+            <p>Qr code n°3:<br> <input type="text" name="QR Code 3" id="riddle3"></p>
+            <p>Qr code n°4:<br> <input type="text" name="QR Code 4" id="riddle4"></p>
+            <p>Qr code n°5:<br> <input type="text" name="QR Code 5" id="riddle5"></p>
+            <p>Qr code n°6:<br> <input type="text" name="QR Code 6" id="riddle6"></p>
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+    
+    <div class="errorMessage">
+        
+    </div>
+
+    <div id="loader" class="hidden">
+        <span class="loader"></span>
+    </div>
+
+
+<script type="module" src="script.js"></script>
+<!--Développeur : Alex Juré / W3C OK-->
+</body>
+
+</html>
+
